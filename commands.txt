@@ -28,3 +28,5 @@ docker container rm a95a3922ea80 // eliminar container
 docker images -a
 docker rmi hashajsajsaj // eliminar imagen
 docker rmi -f 8652b9f0cb4c
+
+docker logs -f jenkins
