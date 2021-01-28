@@ -1,0 +1,30 @@
+docker exec -ti jenkins(nombre del contenedor) bash // para entrar al proceso de jenkins
+
+password jenkins: 123456*, user: admin
+
+*** dentro del directorio donde tenemos el docker-compose.yml ***
+para detenerlo: docker-compose stop
+
+para eliminarlo: docker-compose down
+
+para crearlo: docker-compose up -d
+
+para reiniciarlo: docker-compose restart
+
+para ver los logs: docker-compose -f jenkins => nombre de la imagen
+
+para copiar dentro del contenedor: docker cp script.sh(nombre del archivo) jenkins(nombre del contenedor):/opt
+
+para construir la imagen de centos dentro del compose: docker-compose build
+
+***
+
+**** Crear nueva llave
+ssh-keygen -f remote-key -m PEM
+
+docker ps -a // listar container
+docker container rm a95a3922ea80 // eliminar container
+
+docker images -a
+docker rmi hashajsajsaj // eliminar imagen
+docker rmi -f 8652b9f0cb4c
