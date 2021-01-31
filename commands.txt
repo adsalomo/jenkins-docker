@@ -17,6 +17,8 @@ para copiar dentro del contenedor: docker cp script.sh(nombre del archivo) jenki
 
 para construir la imagen de centos dentro del compose: docker-compose build
 
+cuando modificamos una imagen dentro del compose: docker-compose build
+
 ***
 
 **** Crear nueva llave

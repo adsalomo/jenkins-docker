@@ -1,0 +1,4 @@
+- hosts: test1
+  tasks:
+
+    - shell: echo Hola mundo > /tmp/hola_mundo
