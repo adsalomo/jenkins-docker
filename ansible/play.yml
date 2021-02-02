@@ -1,4 +1,6 @@
 - hosts: test1
   tasks:
 
-    - shell: echo Hola mundo > /tmp/hola_mundo
+   # - shell: echo Hola mundo > /tmp/hola_mundo
+     - debug:
+         var: MSG

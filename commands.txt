@@ -32,3 +32,28 @@ docker rmi hashajsajsaj // eliminar imagen
 docker rmi -f 8652b9f0cb4c
 
 docker logs -f jenkins
+
+*************************************
+chown remote_user:remote_user /var/www/html/ -R
+
+--- CON VARIABLE
+ansible-playbook -i hosts play.yml -e "MSG=HOLA"
+
+ansible -i hosts -m ping all
+
+ansible-playbook -i hosts people.yml -e "EDAD=23"
+
+chown remote_user:remote_user /var/www/html/ -R => permisos de remote user sobre /var/www/html
+
+*************************************
+mysql -u root -p
+desc register;
+
+***************
+nl people.txt | less
+nl people.txt | grep -w 1 => 1	Denice,Caudle  
+nl people.txt | grep -w 1 | awk '{print $2}' => Denice,Caudle  
+nl people.txt | grep -w 1 | awk '{print $2}' | awk -F ',' '{print $1}' => Denice
+
+
+
