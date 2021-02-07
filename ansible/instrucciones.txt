@@ -8,7 +8,7 @@ aqui se ejecuta:
 ansible-playbook -i hosts people.yml -e "EDAD=23"
 
 En el contenedor de mysql copiar en /tmp
-put.sh => dar permiso de ejecución
+put.sh => dar permiso de ejecución y ejecutar
 people.txt
 
 ir al host web y verificar los resultados
