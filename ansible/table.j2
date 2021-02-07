@@ -32,13 +32,13 @@
   if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
   } 
-  $sql = "SELECT id, nombre, apellido, edad FROM register {% if EDAD is defined %} WHERE edad = {{ EDAD }} {% endif %}";
+  $sql = "SELECT id, name, lastName, age FROM register {% if EDAD is defined %} WHERE age = {{ EDAD }} {% endif %}";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
    // output data of each row
    while($row = $result->fetch_assoc()) {
-    echo "<tr><td>" . $row["id"]. "</td><td>" . $row["nombre"] . "</td><td>"
-. $row["apellido"]. "</td><td>" . $row["edad"]. "</td></tr>";
+    echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"] . "</td><td>"
+. $row["lastName"]. "</td><td>" . $row["age"]. "</td></tr>";
   }
     echo "</table>";
   } else { echo "0 results"; }

@@ -1,0 +1,16 @@
+copiar los archivos a jenkins_home/ansible
+hosts
+people.yml
+remote-key => este viene de centos7
+table.js
+
+aqui se ejecuta:
+ansible-playbook -i hosts people.yml -e "EDAD=23"
+
+En el contenedor de mysql copiar en /tmp
+put.sh => dar permiso de ejecución
+people.txt
+
+ir al host web y verificar los resultados
+dar permisos al usuario remote_host
+chown remote_user:remote_user /var/www/html/ -R
